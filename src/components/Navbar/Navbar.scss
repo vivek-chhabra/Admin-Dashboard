@@ -1,0 +1,81 @@
+@import '../../styles/variables';
+@import "../../styles/mixins";
+
+.Navbar {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: $dark-bg;
+    color: $main-color;
+    font-size: 1.6rem;
+    font-family: "Dancing Script", cursive;
+
+    & > * {
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .left {
+        font-weight: 600;
+        img {
+            scale: .9;
+        }
+    }
+
+    .right {
+        gap: 3.5rem;
+        
+        img:hover {
+            cursor: pointer;
+        }
+        .icons {
+            gap: 2rem;
+
+
+            .bell {
+                .num {
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: red;
+                    color: $main-color;
+                    @include flex_center;
+                    font-size: 1.1rem;                    top: 0;
+                    font-weight: 600;
+                    padding-bottom: 2px;
+                    left: 15px;
+                    top: -5px;
+                }
+            }
+        }
+
+        .settings {
+            color: white;
+        }
+
+        .user {
+            gap: 1rem;
+
+            .img {
+                background-color: white;
+                border-radius: 50%;
+                overflow: hidden;
+                height: 27px;
+                width: 27px;
+                @include flex_column_center();
+                border: 2px solid $main-color;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+            }
+
+            .name {
+                text-transform: capitalize;
+            }
+        }
+    }
+
+}

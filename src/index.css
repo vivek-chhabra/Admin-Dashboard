@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Comforter&family=Dancing+Script:wght@400;600&family=Diphylleia&family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,500&family=Inconsolata:wght@200;400;600&family=Lobster&family=Montserrat:wght@100;200;300;400&family=Mukta:wght@200;400&family=Noto+Serif:wght@300;400;500;600&family=Nunito:wght@200;300;400;700;900&family=Oswald:wght@200;400;600&family=Playfair:wght@300&family=Poppins:wght@300;400&family=Roboto+Condensed:wght@300;400&family=Rubik:wght@300;400&family=Tsukimi+Rounded:wght@300;400;500;600&family=Work+Sans:wght@100;200;300&family=Yanone+Kaffeesatz:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,500&family=Foldit:wght@400;500;600&family=Monoton&family=Poppins:wght@700;800&family=Rubik+Pixels&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Narnoor&family=Nunito:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Narnoor&family=Nunito:wght@200;300;400&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #222B3C !important;
+    font-family: "Nunito", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* utility classes */
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

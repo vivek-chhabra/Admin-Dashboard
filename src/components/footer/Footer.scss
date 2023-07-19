@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.Footer {
+    padding: 2rem;
+    background-color: $dark-bg;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: $main-color;
+    // position: absolute;
+
+    .left {
+        font-weight: 600;
+    }
+
+    .copyright {
+        @include flex_center();
+        gap: .5rem;
+    }
+}

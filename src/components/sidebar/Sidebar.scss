@@ -1,0 +1,52 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.Sidebar {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    background-color: $dark-bg;
+    font-size: 1.4rem;
+    color: $main-color;
+    border-right: 3px solid #2A3447;
+    max-width: 200px;
+    width: 100%;
+
+    .items {
+        .item {
+            // padding-block: 1rem;
+            span {
+                font-size: 1.1rem;
+                color: $soft-color;
+            }
+
+            .links {
+                padding-block: 1rem;
+                gap: .2rem;
+
+                a {
+                    padding-block: 1rem;
+                    font-weight: 600;
+                    color: white;
+                    text-decoration: none;
+                    @include flex_center;
+                    justify-content: flex-start;
+                    padding-left: 1.2rem;
+                    border-radius: 1rem;
+
+                    img, i {
+                        margin-right: 1rem;
+                        height: 1.8rem;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $soft-bg;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
