@@ -64,6 +64,14 @@ export default function TopBox() {
                 </div>
                 <div className="amt">{currencyFormat(555)}</div>
             </div>
+            <div className="user flex">
+                <div className="img"><img src={profile} alt="" /></div>
+                <div className="user-info flex-column">
+                    <div className="name">Vivek Chhabra</div>
+                    <div className="email">vivekcb8642@gmail.com</div>
+                </div>
+                <div className="amt">{currencyFormat(555)}</div>
+            </div>
         </div>
     </div>
   )
