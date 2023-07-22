@@ -18,22 +18,10 @@
             justify-content: flex-start;
             align-items: center;
 
-            .img {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                border: 2px solid $main-color;
-                overflow: hidden;
-                @include flex_center;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
+            @include avatar(3rem, 3rem);
 
             .user-info {
-                scale: .8;
+                scale: 0.8;
 
                 .name {
                     font-weight: 600;

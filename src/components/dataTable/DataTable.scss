@@ -1,0 +1,98 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.DataTable {
+    .dataGrid {
+        font-size: 1.4rem !important;
+        background-color: $soft-bg;
+        background-color: #cdd8eb;
+        height: 75vh;
+        border: none;
+        color: lighten($soft-bg, 0);
+
+        @include avatar(3rem, 3rem);
+
+        .action-btns {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.6rem;
+
+            & :first-child {
+                color: rgb(24, 138, 74);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            & :last-child {
+                color: rgb(223, 89, 89);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .css-v4u5dn-MuiInputBase-root-MuiInput-root {
+            font-size: 1.5rem;
+
+            .css-ptiqhd-MuiSvgIcon-root {
+                scale: 1.5;
+                margin-right: 0.7rem;
+                filter: invert(0.4);
+            }
+
+            &::placeholder {
+                font-size: 2rem;
+            }
+        }
+
+        .MuiDataGrid-toolbarContainer {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 2rem 2rem 0 2rem;
+            font-size: 1.6rem !important;
+
+            .MuiButtonBase-root {
+                margin-left: 0.5rem;
+                font-size: 1.3rem;
+                padding-inline: 1rem;
+                color: $soft-bg;
+
+                &:hover {
+                    background-color: lighten($dark-bg, 60);
+                }
+            }
+        }
+
+        .css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone > * {
+            & > * {
+                border-bottom: 2px solid lighten($soft-bg, 30);
+                font-size: 1.3rem !important;
+                font-weight: 600;
+
+                &:first-child > * {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0);
+                }
+
+                outline: solid #b9d21900 1px;
+                &:focus {
+                    outline: solid #b9d21900 1px;
+                }
+            }
+        }
+
+        .css-wop1k0-MuiDataGrid-footerContainer {
+            border-top: none;
+
+            & * {
+                font-weight: 600 !important;
+                font-size: 1.3rem;
+            }
+        }
+
+        .MuiDataGrid-columnHeaders {
+            border-bottom: 2px solid lighten($soft-bg, 30);
+            font-weight: 600;
+        }
+    }
+}

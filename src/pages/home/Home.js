@@ -115,7 +115,7 @@ const barChartBox = [
 function Home() {
     return (
         <div className="Home flex">
-            <Sidebar />
+            
             <div className="home-info">
                 <div className="box" id="box-1">
                     <TopBox />

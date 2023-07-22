@@ -55,22 +55,7 @@
 
         .user {
             gap: 1rem;
-
-            .img {
-                background-color: white;
-                border-radius: 50%;
-                overflow: hidden;
-                height: 27px;
-                width: 27px;
-                @include flex_column_center();
-                border: 2px solid $main-color;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    object-fit: contain;
-                }
-            }
+            @include avatar(2.7rem, 2.7rem);
 
             .name {
                 text-transform: capitalize;
