@@ -20,17 +20,15 @@ function App() {
             <Navbar />
             <div className="middle flex">
                 <Sidebar />
-                {/* <Home /> */}    
-                <Users />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<Signup />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/users" element={<Users />} />
+                    <Route path="/products" element={<Users />}/>
+                    <Route path="*" element={<PageNotFound />} />
+                </Routes>
             </div>
-            {/* <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/signup" element={<Signup />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/users" element={<Users />} />
-                <Route path="/products" element={<Products />} />
-                <Route path="*" element={<PageNotFound />} />
-            </Routes> */}
             <Footer />
         </div>
     );

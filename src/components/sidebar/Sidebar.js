@@ -7,9 +7,7 @@ import order from "../../assets/order.svg";
 import chart from "../../assets/chart.svg";
 import users from "../../assets/user.svg";
 import home from "../../assets/home.svg";
-// import post from "../../assets/post.svg";
 import note from "../../assets/note.svg";
-// import form from "../../assets/form.svg";
 import app from "../../assets/app.svg";
 import log from "../../assets/log.svg";
 import React from "react";
@@ -35,19 +33,19 @@ export default function Sidebar() {
                 <div className="item lists flex-column">
                     <span>LISTS</span>
                     <div className="links flex-column">
-                        <NavLink to={"/"}>
+                        <NavLink to={"/users"}>
                             <img src={users} alt="" />
                             Users
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/products"}>
                             <img src={product} alt="" />
                             Products
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/orders"}>
                             <img src={order} alt="" />
                             Orders
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/posts"}>
                             <i class="fa-regular fa-newspaper"></i>
                             Posts
                         </NavLink>
@@ -56,19 +54,19 @@ export default function Sidebar() {
                 <div className="item general flex-column">
                     <span>GENERAL</span>
                     <div className="links flex-column">
-                        <NavLink to={"/"}>
+                        <NavLink to={"/elements"}>
                             <img src={app} alt="" />
                             Elements
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/notes"}>
                             <img src={note} alt="" />
                             Notes
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/forms"}>
                             <i class="fa-solid fa-file-lines"></i>
                             Forms
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/calender"}>
                             <img src={calender} alt="" />
                             Calender
                         </NavLink>
@@ -77,11 +75,11 @@ export default function Sidebar() {
                 <div className="item maintenance flex-column">
                     <span>MAINTENANCE</span>
                     <div className="links flex-column">
-                        <NavLink to={"/"}>
+                        <NavLink to={"/settings"}>
                             <img src={settings} alt="" />
                             Settings
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/backups"}>
                             <img src={backup} alt="" />
                             Backups
                         </NavLink>
@@ -90,11 +88,11 @@ export default function Sidebar() {
                 <div className="item analytics flex-column">
                     <span>ANALYTICS</span>
                     <div className="links flex-column">
-                        <NavLink to={"/"}>
+                        <NavLink to={"/charts"}>
                             <img src={chart} alt="" />
                             Charts
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/logs"}>
                             <img src={log} alt="" />
                             Logs
                         </NavLink>

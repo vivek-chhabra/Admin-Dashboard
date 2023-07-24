@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Users.scss";
 import profile from "../../assets/pic_vivek.jpg";
 import button from "../../assets/delete.svg";
 import button2 from "../../assets/note.svg";
 import DataTable from "../../components/dataTable/DataTable";
-import { userRows } from "../../data";
+import { products, userRows } from "../../data";
 import { useNavigate } from "react-router-dom";
 import AddUser from "../../components/addUser/AddUser";
 
@@ -16,7 +16,7 @@ function Users() {
         console.log(id + "has been deleted");
     };
 
-    const columns = [
+    const userCols = [
         { field: "id", headerName: "ID", width: 60 },
         {
             field: "avatar",
@@ -85,17 +85,81 @@ function Users() {
         },
     ];
 
+    const productCols = [
+        { field: "id", headerName: "ID", width: 60 },
+        {
+            field: "img",
+            headerName: "Image",
+            width: 90,
+            renderCell: (params) => {
+                return (
+                    <>
+                        <div className="img">
+                            <img src={params.row.img || require("../../assets/noavatar.png")} alt="" />
+                        </div>
+                    </>
+                );
+            },
+        },
+        {
+            field: "title",
+            type: "string",
+            headerName: "Title",
+            width: 250,
+            editable: true,
+        },
+        {
+            field: "color",
+            type: "string",
+            headerName: "Color",
+            width: 130,
+        },
+        {
+            field: "price",
+            type: "string",
+            headerName: "Price",
+            type: "string",
+            width: 120,
+        },
+        {
+            field: "producer",
+            headerName: "Producer",
+            type: "string",
+            width: 130,
+        },
+        {
+            field: "createdAt",
+            headerName: "Created At",
+            type: "string",
+            width: 250,
+        },
+        {
+            field: "inStock",
+            headerName: "In Stock",
+            type: "boolean",
+            editable: true,
+            width: 90,
+        },
+    ];
+
     return (
-        <div className="Users flex-column">
-            <div className="head space-between">
-                <h1>Users</h1>
-                <button className="btn btn-primary add" onClick={() => setAddUser(true)}>
-                    Add New User
-                </button>
+        <>
+            <div className="Users flex-column">
+                <div className="head space-between">
+                    <h1>
+                        {window.location.href.includes("products") && "Products"}
+                        {window.location.href.includes("users") && "Users"}
+                    </h1>
+                    <button className="btn btn-primary add" onClick={() => setAddUser(true)}>
+                        {window.location.href.includes("products") && "Add New Products"}
+                        {window.location.href.includes("users") && "Add New Users"}
+                    </button>
+                </div>
+                {window.location.href.includes("products") && <DataTable rows={products} columns={productCols} />}
+                {window.location.href.includes("users") && <DataTable rows={userRows} columns={userCols} />}
             </div>
-            <DataTable rows={userRows} columns={columns} />
-            {addUser && <AddUser setAddUser={setAddUser} />}
-        </div>
+            {addUser && <AddUser setAddUser={setAddUser} addUser={addUser} />}
+        </>
     );
 }
 

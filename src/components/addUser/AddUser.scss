@@ -1,0 +1,117 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.AddUser {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.635);
+    position: fixed;
+    bottom: 0rem;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+
+    @include flex-center;
+
+    .head {
+        @include flex-center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        i {
+            position: absolute;
+            top: 0rem;
+            right: 0rem;
+            font-size: 2rem;
+            padding: 0.5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    form {
+        max-width: 50rem;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: lighten($dark-bg, 0);
+        scale: 0.8;
+        opacity: 0;
+        // animation: zoom-in 0.3s ease 1 forwards;
+
+        .user-info {
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            .item {
+                gap: 0.5rem;
+                font-weight: 600;
+                font-optical-sizing: 1.4rem;
+                color: lighten($dark-bg, 50);
+
+                input {
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                    border: 1px solid lighten($dark-bg, 50);
+                    background-color: transparent;
+                    outline: none;
+                    color: lighten($soft-bg, 10);
+                    font-weight: 600;
+
+                    &::placeholder {
+                        color: lighten($soft-bg, 5);
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            & > * {
+                flex: 1;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        width: 100%;
+        background-color: lighten($soft-bg, 5);
+        border: 1px solid $dark-bg;
+        font-weight: 600;
+        padding: 0.6rem;
+
+        &:active {
+            border: 1px solid rgba(0, 0, 0, 0);
+            background-color: lighten($soft-bg, 0);
+        }
+
+        &:hover {
+            background-color: lighten($soft-bg, 10);
+        }
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        scale: 1;
+        opacity: 1;
+    }
+    to {
+        scale: 0.8;
+        opacity: 0;
+    }
+}
