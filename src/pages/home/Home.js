@@ -6,6 +6,7 @@ import ChartBox from "../../components/chartBox/ChartBox";
 import BarChartBox from "../../components/barchart/BarChartBox";
 import Piechart from "../../components/piechart/Piechart";
 import Areachart from "../../components/areaChart/Areachart";
+import { topDealUsers } from "../../data";
 
 const data1 = [
     {
@@ -115,10 +116,9 @@ const barChartBox = [
 function Home() {
     return (
         <div className="Home flex">
-            
             <div className="home-info">
                 <div className="box" id="box-1">
-                    <TopBox />
+                    <TopBox information={topDealUsers} />
                 </div>
                 {chartBoxOne.map((boxInfo, idx) => {
                     return (

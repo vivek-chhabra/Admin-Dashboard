@@ -2,7 +2,7 @@ import calender from "../../assets/calendar.svg";
 import settings from "../../assets/settings.svg";
 import product from "../../assets/product.svg";
 import backup from "../../assets/backup.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 import order from "../../assets/order.svg";
 import chart from "../../assets/chart.svg";
 import users from "../../assets/user.svg";
@@ -24,7 +24,7 @@ export default function Sidebar() {
                             <img src={home} alt="" />
                             Homepage
                         </NavLink>
-                        <NavLink to={"/"}>
+                        <NavLink to={"/profile"}>
                             <img src={users} alt="" />
                             Profile
                         </NavLink>

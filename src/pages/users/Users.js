@@ -76,7 +76,7 @@ function Users() {
             renderCell: (params) => {
                 return (
                     <div className="action-btns">
-                        <i className="fa-regular fa-edit" onClick={() => navigate(`user/${params.row.id}`)}></i>
+                        <i className="fa-regular fa-edit" onClick={() => navigate(`/user/${params.row.id}`)}></i>
                         <i className="fa-regular fa-trash-can" onClick={() => handleDelete(params.row.id)}></i>
                     </div>
                 );
@@ -105,7 +105,7 @@ function Users() {
             field: "title",
             type: "string",
             headerName: "Title",
-            width: 250,
+            width: 230,
             editable: true,
         },
         {
@@ -131,13 +131,26 @@ function Users() {
             field: "createdAt",
             headerName: "Created At",
             type: "string",
-            width: 250,
+            width: 200,
         },
         {
             field: "inStock",
             headerName: "In Stock",
             type: "boolean",
             editable: true,
+            width: 90,
+        },
+        {
+            field: "action",
+            headerName: "Action",
+            renderCell: (params) => {
+                return (
+                    <div className="action-btns">
+                        <i className="fa-regular fa-edit" onClick={() => navigate(`/product/${params.row.id}`)}></i>
+                        <i className="fa-regular fa-trash-can" onClick={() => handleDelete(params.row.id)}></i>
+                    </div>
+                );
+            },
             width: 90,
         },
     ];
