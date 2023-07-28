@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Admin-Dashboard/static/css/main.d1f64dc6.css",
-    "main.js": "/Admin-Dashboard/static/js/main.84a90c05.js",
+    "main.js": "/Admin-Dashboard/static/js/main.e2ddb947.js",
     "static/media/pic_vivek.jpg": "/Admin-Dashboard/static/media/pic_vivek.07bcee6582e03688ed74.jpg",
     "index.html": "/Admin-Dashboard/index.html",
     "static/media/logo.svg": "/Admin-Dashboard/static/media/logo.64a6571f27a8f7961ce981195257a7c7.svg",
@@ -20,10 +20,10 @@
     "static/media/app.svg": "/Admin-Dashboard/static/media/app.817b652b6115b086e4f1a083cf0e6521.svg",
     "static/media/search.svg": "/Admin-Dashboard/static/media/search.c714d53241bade76f9ae6c0b855f722d.svg",
     "main.d1f64dc6.css.map": "/Admin-Dashboard/static/css/main.d1f64dc6.css.map",
-    "main.84a90c05.js.map": "/Admin-Dashboard/static/js/main.84a90c05.js.map"
+    "main.e2ddb947.js.map": "/Admin-Dashboard/static/js/main.e2ddb947.js.map"
   },
   "entrypoints": [
     "static/css/main.d1f64dc6.css",
-    "static/js/main.84a90c05.js"
+    "static/js/main.e2ddb947.js"
   ]
 }
