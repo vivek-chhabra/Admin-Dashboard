@@ -2,7 +2,7 @@ import calender from "../../assets/calendar.svg";
 import settings from "../../assets/settings.svg";
 import product from "../../assets/product.svg";
 import backup from "../../assets/backup.svg";
-import { NavLink  } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import order from "../../assets/order.svg";
 import chart from "../../assets/chart.svg";
 import users from "../../assets/user.svg";
@@ -22,11 +22,11 @@ export default function Sidebar() {
                     <div className="links flex-column">
                         <NavLink to={"/"}>
                             <img src={home} alt="" />
-                            Homepage
+                            <span>Homepage</span>
                         </NavLink>
                         <NavLink to={"/profile"}>
                             <img src={users} alt="" />
-                            Profile
+                            <span>Profile</span>
                         </NavLink>
                     </div>
                 </div>
@@ -35,19 +35,19 @@ export default function Sidebar() {
                     <div className="links flex-column">
                         <NavLink to={"/users"}>
                             <img src={users} alt="" />
-                            Users
+                            <span>Users</span>
                         </NavLink>
                         <NavLink to={"/products"}>
                             <img src={product} alt="" />
-                            Products
+                            <span>Products</span>
                         </NavLink>
                         <NavLink to={"/orders"}>
                             <img src={order} alt="" />
-                            Orders
+                            <span>Orders</span>
                         </NavLink>
                         <NavLink to={"/posts"}>
                             <i class="fa-regular fa-newspaper"></i>
-                            Posts
+                            <span>Posts</span>
                         </NavLink>
                     </div>
                 </div>
@@ -56,19 +56,19 @@ export default function Sidebar() {
                     <div className="links flex-column">
                         <NavLink to={"/elements"}>
                             <img src={app} alt="" />
-                            Elements
+                            <span>Elements</span>
                         </NavLink>
                         <NavLink to={"/notes"}>
                             <img src={note} alt="" />
-                            Notes
+                            <span>Notes</span>
                         </NavLink>
                         <NavLink to={"/forms"}>
                             <i class="fa-solid fa-file-lines"></i>
-                            Forms
+                            <span>Forms</span>
                         </NavLink>
                         <NavLink to={"/calender"}>
                             <img src={calender} alt="" />
-                            Calender
+                            <span>Calender</span>
                         </NavLink>
                     </div>
                 </div>
@@ -77,11 +77,11 @@ export default function Sidebar() {
                     <div className="links flex-column">
                         <NavLink to={"/settings"}>
                             <img src={settings} alt="" />
-                            Settings
+                            <span>Settings</span>
                         </NavLink>
                         <NavLink to={"/backups"}>
                             <img src={backup} alt="" />
-                            Backups
+                            <span>Backups</span>
                         </NavLink>
                     </div>
                 </div>
@@ -90,11 +90,11 @@ export default function Sidebar() {
                     <div className="links flex-column">
                         <NavLink to={"/charts"}>
                             <img src={chart} alt="" />
-                            Charts
+                            <span>Charts</span>
                         </NavLink>
                         <NavLink to={"/logs"}>
                             <img src={log} alt="" />
-                            Logs
+                            <span>Logs</span>
                         </NavLink>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ export default function Piechart() {
                     </PieChart>
                 </ResponsiveContainer>
             </div>
-            <div className="options">
+            <div className="options flex">
                 {data.map((info, idx) => (
                     <>
                         <div className="option flex-column" id={`op-${idx + 1}`}>

@@ -15,7 +15,7 @@ export default function TopBox(information) {
                         </div>
                         <div className="user-info flex-column">
                             <div className="name">{info.username}</div>
-                            <div className="email">{info.email}</div>
+                            <div className="email">{info.email.slice(0, 13)}...</div>
                         </div>
                         <div className="amt">{currencyFormat(info.amount)}</div>
                     </div>

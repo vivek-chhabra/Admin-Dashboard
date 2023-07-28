@@ -1,5 +1,18 @@
 @import './variables';
+@import './responsive';
 
 .App {
     background-color: $dark-bg;
+}
+
+.container {
+    max-width: 100% !important;
+
+    .middle {
+        .Sidebar {
+            flex: none;
+        }
+    }
+
+    --bs-gutter-x: 0rem;
 }

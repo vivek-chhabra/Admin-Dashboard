@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import "../../styles/mixins";
+@import "../../styles/responsive";
 
 .Navbar {
     width: 100%;
@@ -40,7 +41,8 @@
                     background-color: red;
                     color: $main-color;
                     @include flex_center;
-                    font-size: 1.1rem;                    top: 0;
+                    font-size: 1.1rem;                    
+                    top: 0;
                     font-weight: 600;
                     padding-bottom: 2px;
                     left: 15px;
@@ -63,4 +65,19 @@
         }
     }
 
+}
+
+// responsive design
+
+.Navbar {
+    .right {
+        @include xxl {
+            gap: 2rem;
+        }
+        .icons {
+            @include xxl {
+                display: none;
+            }
+        }
+    }
 }

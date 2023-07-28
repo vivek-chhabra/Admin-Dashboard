@@ -65,7 +65,7 @@ export default function ChartBox({ title, amt, percent, color }) {
                 <div className="chart">
                     <ResponsiveContainer width="99%" height="100%">
                         <LineChart data={data}>
-                            <Tooltip contentStyle={{ background: "transparent", border: "none", fontSize: "12px" }} labelStyle={{ display: "none" }} position={{ x: 25, y: 45 }} />
+                            <Tooltip contentStyle={{ background: "transparent", border: "none", fontSize: "12px" }} labelStyle={{ display: "none" }} position={{ x: 40, y: -20 }} />
                             <Line type="monotone" dataKey="pv" stroke={color} strokeWidth={2} />
                         </LineChart>
                     </ResponsiveContainer>

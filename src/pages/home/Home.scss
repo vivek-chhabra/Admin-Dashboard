@@ -1,5 +1,6 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
+@import "../../styles/responsive";
 
 .Home {
     color: white;
@@ -12,14 +13,37 @@
         padding-block: 1rem;
         padding-inline: 2rem;
         grid-auto-rows: 140px;
-        grid-auto-rows: minmax(140px, fit-content);
         grid-template-columns: repeat(4, 1fr);
+
+        @include xl {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sm {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 150px;
+            padding-inline: 1rem;
+
+            #box-7 {
+                display: none;
+            }
+        }
 
         .box {
             padding: 1.5rem;
             border-radius: 1rem;
             border: 1px solid $soft-bg;
-            // overflow: hidden;
+            overflow: hidden;
+
+            @include xl {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
         }
 
         #box-1 {
@@ -28,33 +52,32 @@
             overflow: auto;
 
             &::-webkit-scrollbar {
-                width: 14px;
-            }
-
-            &::-webkit-scrollbar-track {
-                box-shadow: inset 0 0 14px 14px transparent;
-                border: solid 4px transparent;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                box-shadow: inset 0 0 14px 14px lighten($soft-bg, 4);
-                border: solid 4px transparent;
-                border-radius: 14px;
-            }
-
-            &::-webkit-scrollbar-button {
                 display: none;
+            }
+
+            @include md {
+                grid-row: span 2;
             }
         }
 
         #box-4 {
             grid-column: span 1;
             grid-row: span 3;
+
+            .options {
+                @include xl {
+                    flex-wrap: nowrap;
+                }
+            }
+
+            @include xl {
+                grid-row: span 2;
+            }
         }
 
         #box-7 {
-            grid-column: span 2;
             grid-row: span 2;
+            grid-column: span 2;
         }
     }
 }
