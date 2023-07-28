@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Admin-Dashboard/static/css/main.d1f64dc6.css",
+    "main.js": "/Admin-Dashboard/static/js/main.84a90c05.js",
+    "static/media/pic_vivek.jpg": "/Admin-Dashboard/static/media/pic_vivek.07bcee6582e03688ed74.jpg",
+    "index.html": "/Admin-Dashboard/index.html",
+    "static/media/logo.svg": "/Admin-Dashboard/static/media/logo.64a6571f27a8f7961ce981195257a7c7.svg",
+    "static/media/settings.svg": "/Admin-Dashboard/static/media/settings.880ea99a704fd7ea3afaed63289f3430.svg",
+    "static/media/calendar.svg": "/Admin-Dashboard/static/media/calendar.c720cc8fdd507e29a5ea32ec75965783.svg",
+    "static/media/order.svg": "/Admin-Dashboard/static/media/order.74005c2ab98be71316f93d861f3a1bf1.svg",
+    "static/media/note.svg": "/Admin-Dashboard/static/media/note.9b2e3c8a94d7ed1f71d52d2f295a3ce9.svg",
+    "static/media/backup.svg": "/Admin-Dashboard/static/media/backup.e9bd729470288712b5daf9596f46808b.svg",
+    "static/media/log.svg": "/Admin-Dashboard/static/media/log.2e51285921b35945a667cf71822972ad.svg",
+    "static/media/home.svg": "/Admin-Dashboard/static/media/home.96ceac0e8262471ba54590897d866111.svg",
+    "static/media/chart.svg": "/Admin-Dashboard/static/media/chart.417d81d2915f99227c291b9a0de3e4b1.svg",
+    "static/media/expand.svg": "/Admin-Dashboard/static/media/expand.c6c52db4f2416cd7aa940c5d78af7e7f.svg",
+    "static/media/user.svg": "/Admin-Dashboard/static/media/user.cf48bc9b7379f24b9313c075b8843814.svg",
+    "static/media/notifications.svg": "/Admin-Dashboard/static/media/notifications.d8b64ffce38382d2e80a1b90bed88bce.svg",
+    "static/media/product.svg": "/Admin-Dashboard/static/media/product.1f9faefe1921b5f0ca4747d3140b448e.svg",
+    "static/media/app.svg": "/Admin-Dashboard/static/media/app.817b652b6115b086e4f1a083cf0e6521.svg",
+    "static/media/search.svg": "/Admin-Dashboard/static/media/search.c714d53241bade76f9ae6c0b855f722d.svg",
+    "main.d1f64dc6.css.map": "/Admin-Dashboard/static/css/main.d1f64dc6.css.map",
+    "main.84a90c05.js.map": "/Admin-Dashboard/static/js/main.84a90c05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1f64dc6.css",
+    "static/js/main.84a90c05.js"
+  ]
+}
