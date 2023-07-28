@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import "./Products.scss";
-import { products } from "../../data";
-import { useNavigate } from "react-router-dom";
 import DataTable from "../../components/dataTable/DataTable";
+import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { products } from "../../data";
+import "./Products.scss";
 
 function Products() {
     const [addUser, setAddUser] = useState(false);

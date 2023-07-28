@@ -1,7 +1,6 @@
+import { currencyFormat } from "../../helpers";
 import React from "react";
 import "./TopBox.scss";
-import profile from "../../assets/pic_vivek.jpg";
-import { currencyFormat } from "../../helpers";
 
 export default function TopBox(information) {
     return (

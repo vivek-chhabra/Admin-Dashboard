@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.scss";
-// import copyright from "../../assets/";
 
 export default function Footer() {
     return (

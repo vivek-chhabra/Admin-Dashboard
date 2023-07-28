@@ -1,13 +1,12 @@
-import React from "react";
-import "./Navbar.scss";
-import logo from "../../assets/logo.svg";
-import { capitalize } from "../../helpers";
-import search from "../../assets/search.svg";
-import expand from "../../assets/expand.svg";
-import settimg from "../../assets/settings.svg";
-import app from "../../assets/app.svg";
 import notification from "../../assets/notifications.svg";
 import profile from "../../assets/pic_vivek.jpg";
+import settimg from "../../assets/settings.svg";
+import expand from "../../assets/expand.svg";
+import search from "../../assets/search.svg";
+import logo from "../../assets/logo.svg";
+import app from "../../assets/app.svg";
+import React from "react";
+import "./Navbar.scss";
 
 export default function Navbar() {
     return (

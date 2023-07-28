@@ -1,5 +1,5 @@
-import SinglePage from "./components/singlePage/SinglePage";
 import PageNotFound from "./components/pagenotfound/PageNotFound";
+import SinglePage from "./components/singlePage/SinglePage";
 import { AuthContext } from "./context/AuthContext";
 import Sidebar from "./components/sidebar/Sidebar";
 import Products from "./pages/products/Products";
@@ -12,7 +12,6 @@ import Users from "./pages/users/Users";
 import Login from "./pages/login/Login";
 import User from "./pages/user/User";
 import Home from "./pages/home/Home";
-import { useContext } from "react";
 import "./styles/main.scss";
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
                     <Route path="/products" element={<Users />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
-                {/* <User /> */}
             </div>
             <Footer />
         </div>

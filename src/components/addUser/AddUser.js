@@ -1,5 +1,5 @@
-import "./AddUser.scss";
 import React from "react";
+import "./AddUser.scss";
 
 const userInfo = [
     { name: "First Name", placeHolder: "First name", type: "text" },

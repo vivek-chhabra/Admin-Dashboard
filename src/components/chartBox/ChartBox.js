@@ -1,9 +1,8 @@
-import React from "react";
-import "./ChartBox.scss";
+import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 import { NavLink } from "react-router-dom";
 import users from "../../assets/logo.svg";
-import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
-import { randNum } from "../../helpers";
+import React from "react";
+import "./ChartBox.scss";
 
 const data = [
     {

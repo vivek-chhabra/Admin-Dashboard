@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom";
-import "./User.scss";
-import React from "react";
-import { singleUser } from "../../data";
 import SinglePage from "../../components/singlePage/SinglePage";
+import { useParams } from "react-router-dom";
+import { singleUser } from "../../data";
+import React from "react";
+import "./User.scss";
 
 
 export default function User() {

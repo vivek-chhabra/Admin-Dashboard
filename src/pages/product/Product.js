@@ -1,7 +1,7 @@
 import SinglePage from "../../components/singlePage/SinglePage";
 import { singleProduct } from "../../data";
-import "./Product.scss";
 import React from "react";
+import "./Product.scss";
 
 export default function Product() {
   const { img, title, info, chart, activities } = singleProduct;

@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import "./Users.scss";
-import profile from "../../assets/pic_vivek.jpg";
-import button from "../../assets/delete.svg";
-import button2 from "../../assets/note.svg";
 import DataTable from "../../components/dataTable/DataTable";
+import AddUser from "../../components/addUser/AddUser";
 import { products, userRows } from "../../data";
 import { useNavigate } from "react-router-dom";
-import AddUser from "../../components/addUser/AddUser";
+import React, { useState } from "react";
+import "./Users.scss";
 
 function Users() {
     const navigate = useNavigate();

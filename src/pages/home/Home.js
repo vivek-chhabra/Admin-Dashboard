@@ -1,12 +1,12 @@
-import React from "react";
-import "./Home.scss";
+import BarChartBox from "../../components/barchart/BarChartBox";
+import Areachart from "../../components/areaChart/Areachart";
+import Piechart from "../../components/piechart/Piechart";
+import ChartBox from "../../components/chartBox/ChartBox";
 import Sidebar from "../../components/sidebar/Sidebar";
 import TopBox from "../../components/topBox/TopBox";
-import ChartBox from "../../components/chartBox/ChartBox";
-import BarChartBox from "../../components/barchart/BarChartBox";
-import Piechart from "../../components/piechart/Piechart";
-import Areachart from "../../components/areaChart/Areachart";
 import { topDealUsers } from "../../data";
+import React from "react";
+import "./Home.scss";
 
 const data1 = [
     {
