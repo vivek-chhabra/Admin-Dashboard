@@ -1,6 +1,6 @@
 # 📝 Admin Dashboard Project
 
-**Admin Dashboard** is a web application that provides users with a comprehensive view of various data through interactive charts. The dashboard is built using React.js, JavaScript, CSS, and JSX. It integrates the Recharts library, a third-party API, to facilitate chart rendering. The website is designed to be fully responsive, ensuring a seamless user experience on all devices.
+**Admin Dashboard** is a web application that provides users with a comprehensive view of various data through interactive charts. The dashboard is built using React.js, JavaScript, CSS/SCSS, and JSX. It integrates the Recharts library, a third-party API, to facilitate chart rendering. The website is designed to be fully responsive, ensuring a seamless user experience on all devices.
 
 <br>
 
@@ -22,7 +22,8 @@
 
 - **JSX**: A syntax extension for JavaScript used with React to describe the user interface.
 
-- **CSS**: Cascading Style Sheets are used to style the components and enhance the visual appeal of the dashboard.
+- **CSS/SCSS**: Cascading Style Sheets are used to style the components and enhance the visual appeal of the dashboard, and SCSS (Sass) is used as a preprocessor to 
+  enhance the maintainability and organization of the styles.
 
 - **Recharts**: A third-party API that provides a declarative way to build interactive charts using React components.
 
