@@ -1,4 +1,4 @@
-# 📝 Admin Dashboard Project
+# 📝 Admin Dashboard
 
 **Admin Dashboard** is a web application that provides users with a comprehensive view of various data through interactive charts. The dashboard is built using React.js, JavaScript, CSS/SCSS, and JSX. It integrates the Recharts library, a third-party API, to facilitate chart rendering. The website is designed to be fully responsive, ensuring a seamless user experience on all devices.
 
