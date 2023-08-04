@@ -1,10 +1,14 @@
-# 📝 Admin Dashboard
+# 📊 Admin Dashboard
 
 **Admin Dashboard** is a web application that provides users with a comprehensive view of various data through interactive charts. The dashboard is built using React.js, JavaScript, CSS/SCSS, and JSX. It integrates the Recharts library, a third-party API, to facilitate chart rendering. The website is designed to be fully responsive, ensuring a seamless user experience on all devices.
 
 <br>
 
 > [Live Demo](https://vivek-chhabra.github.io/Admin-Dashboard/)
+
+<br>
+
+![Screenshot (179)](https://github.com/vivek-chhabra/Admin-Dashboard/assets/105328667/a0a70438-c7ea-43e5-b26b-509a5c12ef8d)
 
 <br>
 
